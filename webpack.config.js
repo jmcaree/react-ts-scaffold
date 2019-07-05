@@ -1,3 +1,5 @@
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -11,7 +13,10 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: "ts-loader",
+        use: [
+          "ts-loader",
+          "tslint-loader",
+        ],
         exclude: /node_modules/,
       },
     ]
@@ -20,6 +25,12 @@ module.exports = {
     filename: "bundle.js",
     path: path.join(__dirname, "/dist/"),
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "src", "index.html"),
+    }),
+  ],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"],
   },
