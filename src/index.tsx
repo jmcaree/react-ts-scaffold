@@ -1,9 +1,11 @@
 import * as React from "react";
 import { render } from "react-dom";
+import Hello from "./components/Hello";
+import "./styles/site.scss";
 
 const App = () => {
   return (
-    <div>Hello, World!</div>
+    <Hello name="World" />
   );
 };
 
