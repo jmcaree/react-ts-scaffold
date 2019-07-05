@@ -1,7 +1,7 @@
 # react-ts-scaffold
 A template repo for scaffolding basic TypeScript/React projects
 
-# Setup Instructions
+### Setup Instructions
 
 1. Ensure that the latest versions of node and npm are installed
 2. Install webpack, webpack-cli and webpack-dev-server globally: 
