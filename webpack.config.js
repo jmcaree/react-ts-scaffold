@@ -19,7 +19,21 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
-    ]
+      {
+        test: /\.css$/,
+        use: "style-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.scss?/,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+        ],
+        exclude: /node_modules/,
+      },
+    ],
   },
   output: {
     filename: "bundle.js",
