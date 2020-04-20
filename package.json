@@ -4,6 +4,7 @@
   "description": "A template repo for scaffolding basic TypeScript/React projects",
   "private": true,
   "scripts": {
+    "audit": "npm audit --json | npm-audit-html --output .audit/npm-audit-report.html",
     "build": "webpack",
     "start": "webpack-dev-server",
     "test": "jest"
@@ -34,6 +35,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^25.1.0",
     "node-sass": "^4.13.1",
+    "npm-audit-html": "^1.4.1",
     "react-test-renderer": "^16.12.0",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
@@ -44,7 +46,7 @@
     "tslint-loader": "^3.5.4",
     "typescript": "^3.7.5",
     "utf-8-validate": "^5.0.2",
-    "webpack": "^4.41.6",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
