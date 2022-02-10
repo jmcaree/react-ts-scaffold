@@ -34,7 +34,7 @@
     "fibers": "^5.0.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "npm-audit-html": "^1.4.1",
     "react-test-renderer": "^16.13.1",
     "sass": "^1.26.9",
